@@ -2,8 +2,8 @@
 let count = document.getElementById("counter");
 let incre = document.getElementById("incrementBtn");
 incre.addEventListener('click', function() {
-	let counterValue = parseInt(count.textContent);
-	alert('Counter Value:' + counterValue);
+	 let counterValue = parseInt(counterText.split(':')[1].trim());
+	alert('Counter Value:'+ counterValue);
 	counterValue++;
-	count.textContent = counterValue;
+	count.textContent = 'Counter Value: ' + counterValue;
 })
